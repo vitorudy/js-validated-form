@@ -1,0 +1,169 @@
+//
+//  LAYOUT
+//
+
+section,
+article {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.hero-headline {
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+
+/* Clearfix */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  width:85%;
+  margin:auto;
+}
+@media(max-width:350px) {
+  .content {
+    width:95%;
+  }
+}
+
+.centered {
+  text-align: center
+}
+
+.img-content {
+  text-align: center;
+  width:85%;
+  margin:auto;
+  img {
+    width:100%;
+  }
+}
+
+.justified {
+  text-align: justify;
+}
+
+//
+//  BUTTON STYLES
+//
+
+.btn {
+  margin: 2px 3px;
+  background-color: @brand-primary;
+  border:none;
+  color:white;
+  width:250px;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 4rem;
+  outline: none;
+  a{
+    color:white;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: darken(@brand-primary, 10%);
+  transition: 0.2s ease all;
+}
+
+
+
+.outlined {
+  background-color: transparent;
+  border:2px solid @brand-primary;
+  color: @brand-primary;
+  a{
+    color:@brand-primary;
+  }
+}
+
+ .outlined:hover {
+    background-color: @brand-primary;
+    color:white;
+      transition: 0.2s ease all;
+      a {
+        color:white;
+      }
+  }
+
+
+  .inverse {
+    border-color: white;
+    color:white;
+    a {
+      color:white;
+    }
+  }
+
+  .inverse:hover,
+  .inverse:focus {
+    background-color: white;
+    color:@brand-primary;
+    transition: 0.2s ease all;
+      a {
+        color:@brand-primary;
+      }
+  }
+
+.inverse-secondary {
+   border-color: white;
+    color:white;
+    a {
+      color:white; }
+}
+
+.inverse-secondary:hover,
+.inverse-secondary:focus {
+  background-color: white;
+  color:@brand-secondary;
+  transition: 0.2s ease all;
+   a {
+     color:@brand-secondary;
+   }
+}
+
+
+//
+// THEMING
+//
+
+.bg-gray {
+  background: @bg-gray;
+}
+
+.bg-brand {
+  background: @brand-primary;
+    .display-1,
+    .display-2,
+    .display-3,
+    .subhead-1,
+    .title,{
+      color:white;
+      font-weight: 400;
+    }
+  }
+
+  .bg-secondary {
+  background: @brand-secondary;
+    .display-1,
+    .display-2,
+    .display-3,
+    .subhead-1,
+    .title,{
+      color:white;
+      font-weight: 400;
+    }
+  }
+
+.underline {
+  padding-bottom: 2px;
+  border-bottom: 1px solid @brand-primary;
+}
